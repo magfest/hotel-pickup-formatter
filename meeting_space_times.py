@@ -87,12 +87,6 @@ class MeetingSpaceTimes:
             self.latest_seen_time = reservation.end_dt
 
     def do_append_new_room_times(self, function_space, start_date, end_date):
-
-        # HACK, REMOVE
-        if function_space == "Prince George's Exhibit Hall C":
-            x = 3
-
-
         if function_space not in self.room_reservations:
             self.room_reservations[function_space] = []
 
