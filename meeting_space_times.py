@@ -12,6 +12,11 @@ class MeetingSpaceTimes:
         self.earliest_seen_time = None
         self.latest_seen_time = None
 
+    def read_meeting_space_names_from(self, input_file):
+        f = open(input_file, 'rt')
+        for function_space in f.readlines():
+            self.add_function_space_if_not_exists(function_space.strip())
+
     def read_from(self, input_csv):
         f = open(input_csv, 'rt')
 
@@ -86,9 +91,12 @@ class MeetingSpaceTimes:
         if self.latest_seen_time is None or reservation.end_dt > self.latest_seen_time:
             self.latest_seen_time = reservation.end_dt
 
-    def do_append_new_room_times(self, function_space, start_date, end_date):
+    def add_function_space_if_not_exists(self, function_space):
         if function_space not in self.room_reservations:
             self.room_reservations[function_space] = []
+
+    def do_append_new_room_times(self, function_space, start_date, end_date):
+        self.add_function_space_if_not_exists(function_space)
 
         new_reservation = RoomReservation(start_date, end_date)
 
