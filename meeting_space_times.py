@@ -68,6 +68,16 @@ class MeetingSpaceTimes:
             self.do_append_new_room_times('Prince George\'s Exhibit Hall B', start_date, end_date)
             return
 
+        if function_space == 'Prince George\'s Exhibit Hall BC':
+            self.do_append_new_room_times('Prince George\'s Exhibit Hall B', start_date, end_date)
+            self.do_append_new_room_times('Prince George\'s Exhibit Hall C', start_date, end_date)
+            return
+
+        if function_space == 'Prince George\'s Exhibit Hall CD':
+            self.do_append_new_room_times('Prince George\'s Exhibit Hall C', start_date, end_date)
+            self.do_append_new_room_times('Prince George\'s Exhibit Hall D', start_date, end_date)
+            return
+
         if function_space == 'Prince George\'s Exhibit Hall DE':
             self.do_append_new_room_times('Prince George\'s Exhibit Hall D', start_date, end_date)
             self.do_append_new_room_times('Prince George\'s Exhibit Hall E', start_date, end_date)
