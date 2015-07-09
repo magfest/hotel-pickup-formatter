@@ -9,8 +9,8 @@ from meeting_space_times import *
 
 meeting_space = MeetingSpaceTimes()
 
-input_csv = 'C:\\Users\\Dom\\Downloads\\gaylord proposed feb 2016 dates.csv'
+input_csv = 'markcenter-times.csv'
 # input_csv = "c:/tmp/test-input.csv"
-meeting_space.read_meeting_space_names_from("gaylord-names.txt")
+meeting_space.read_meeting_space_names_from("markcenter-names.txt")
 meeting_space.read_from(input_csv)
 meeting_space.output_csv("c:/tmp/tmpout.csv")
