@@ -24,10 +24,10 @@ class MeetingSpaceTimes:
 
         for field in required_fieldnames:
             if field not in reader.fieldnames:
-                raise 'aborting: CSV doesn\'t contain a required field: ' + field
+                raise ValueError('aborting: CSV doesn\'t contain a required field: ' + field)
 
         for row in reader:
-            function_space = row['Function Space']
+            function_space = row['Function Space'].strip()
             day = row['Date']                  # "1/22/16"
             start_time = row['Start Time']      # "5:00 PM"
             end_time = row['End Time']          # "7:00 PM"
