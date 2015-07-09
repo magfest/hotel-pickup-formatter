@@ -10,7 +10,6 @@ class TestMeetingSpaceTimes(TestCase):
 
         t = MeetingSpaceTimes()
 
-
         function_space = "bigass ballroom"
         start_date1 = t.combine_date_time("1:00 PM", "2/1/2016")
         end_date1 = t.combine_date_time("4:00 PM", "2/2/2016")
@@ -19,7 +18,6 @@ class TestMeetingSpaceTimes(TestCase):
 
         self.assertEqual(1, len(t.room_reservations))
         self.assertEqual(1, len(t.room_reservations["bigass ballroom"]))
-
 
         start_date2 = t.combine_date_time("5:00 PM", "2/2/2016")
         end_date2 = t.combine_date_time("4:00 PM", "2/3/2016")
@@ -32,7 +30,6 @@ class TestMeetingSpaceTimes(TestCase):
         self.assertEqual(t.room_reservations["bigass ballroom"][0].start_dt, start_date1)
         self.assertEqual(t.room_reservations["bigass ballroom"][0].end_dt, end_date2)
 
-
         start_date3 = t.combine_date_time("5:00 PM", "1/31/2016")
         end_date3 = t.combine_date_time("12:00 PM", "2/1/2016")
 
@@ -43,7 +40,6 @@ class TestMeetingSpaceTimes(TestCase):
 
         self.assertEqual(t.room_reservations["bigass ballroom"][0].start_dt, start_date3)
         self.assertEqual(t.room_reservations["bigass ballroom"][0].end_dt, end_date2)
-
 
     def test_hacky_name_recognition_junk(self):
         t = MeetingSpaceTimes()
