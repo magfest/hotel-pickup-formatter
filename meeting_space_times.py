@@ -133,24 +133,49 @@ class MeetingSpaceTimes:
             for function_space, reservations in sorted(self.room_reservations.items()):
                 row = [function_space]
                 currently_in_a_block = False
+                seen_anything = False
+                
                 for day in self.get_full_date_range():
-                    cell_text = ' '
+                    output_text = None
 
-                    # BUG: if a reservation starts and ends on the same day it wont output right.
                     for reservation in reservations:
-                        if self.is_day_month_year_same(reservation.start_dt, day):
-                            cell_text = reservation.start_dt.strftime("%I:%M %p")
-                            currently_in_a_block = True
-                        elif self.is_day_month_year_same(reservation.end_dt, day):
-                            cell_text = reservation.end_dt.strftime("%I:%M %p")
-                            currently_in_a_block = False
-                        else:
-                            if currently_in_a_block:
-                                cell_text = '*'
-                            else:
-                                cell_text = ' '
+                        starts_today = self.is_day_month_year_same(reservation.start_dt, day)
+                        ends_today = self.is_day_month_year_same(reservation.end_dt, day)
 
-                    row.append(cell_text)
+                        start_date_txt = reservation.start_dt.strftime("%I:%M %p")
+                        end_date_txt = reservation.end_dt.strftime("%I:%M %p")
+
+                        if starts_today and ends_today:
+                            output_text = start_date_txt + " to " + end_date_txt
+                            seen_anything = True
+                        else:
+                            if starts_today:
+                                output_text = start_date_txt
+                                currently_in_a_block = True
+                                seen_anything = True
+
+                            if ends_today:
+                                output_text = end_date_txt
+                                currently_in_a_block = False
+                                seen_anything = True
+                            
+                        if output_text is None:
+                            if currently_in_a_block:
+                                output_text = '*'
+                            elif not seen_anything:
+                                output_text = ' '
+                            else:
+                                output_text = 'NOPE!'
+
+                    row.append(output_text)
+
+                # kill any extra NOPE!'s on the right side
+                i = len(row) - 1
+                while i >= 0:
+                    if row[i] != "NOPE!":
+                        break
+                    row[i] = ' '
+                    i = i - 1
 
                 writer.writerow(row)
 
