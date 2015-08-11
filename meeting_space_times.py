@@ -1,6 +1,7 @@
 from reservation import *
 import csv
 import datetime
+import re
 from datetime import timedelta
 
 required_fieldnames = ['Function Space', 'Date', 'Start Time', 'End Time']
@@ -39,8 +40,19 @@ class MeetingSpaceTimes:
 
     @staticmethod
     def combine_date_time(which_time, day):
+
+        # strip seconds away.
+        # i.e. convert "06:00:00 AM" to "06:00 AM"
+        time_search = re.search('(\d\d:\d\d)(?::\d\d)?( (A|P)M)', which_time, re.IGNORECASE)
+        time_no_seconds = time_search.group(1) + time_search.group(2)
+
+        # if present, change short year to long year
+        # i.e. "09/09/15" becomes "09/09/2015"
+        day_search = re.search('(\d?\d\/\d?\d\/)(?:20)?(\d\d)', day, re.IGNORECASE)
+        date_long_year = day_search.group(1) + "20" + day_search.group(2)
+
         time_format = "%m/%d/%Y %I:%M %p"
-        combined_date_time_str = day + " " + which_time
+        combined_date_time_str = date_long_year + " " + time_no_seconds
         return datetime.datetime.strptime(combined_date_time_str, time_format)
 
     def append_new_room_times(self, function_space, start_date, end_date):
