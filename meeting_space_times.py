@@ -43,7 +43,7 @@ class MeetingSpaceTimes:
 
         # strip seconds away.
         # i.e. convert "06:00:00 AM" to "06:00 AM"
-        time_search = re.search('(\d\d:\d\d)(?::\d\d)?( (A|P)M)', which_time, re.IGNORECASE)
+        time_search = re.search('(\d?\d:\d\d)(?::\d\d)?( (A|P)M)', which_time, re.IGNORECASE)
         time_no_seconds = time_search.group(1) + time_search.group(2)
 
         # if present, change short year to long year

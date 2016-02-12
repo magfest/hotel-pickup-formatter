@@ -25,6 +25,13 @@ class TestMeetingSpaceTimes(TestCase):
     def assertReservationWasNotExtended(self, meeting_space_times):
         self.assertEqual(2, len(meeting_space_times.room_reservations["bigass ballroom"]))
 
+    def test_time_formats(self):
+        t = MeetingSpaceTimes()
+        t.combine_date_time("3:00 PM", "2/1/2016")
+        t.combine_date_time("03:00 PM", "2/1/2016")
+        t.combine_date_time("3:00:00 PM", "2/1/2016")
+        t.combine_date_time("03:00:00 PM", "2/1/2016")
+
     def test_B_no_overlap_A(self):
         function_space = "bigass ballroom"
         t = MeetingSpaceTimes()
