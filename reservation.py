@@ -1,7 +1,9 @@
-hour_tolerance = 0.45   # number of hours away two dates can be to be the "same"
+hour_tolerance = 1.5   # number of hours away two dates can be to be the "same"
 
 
-# a date comparison class that
+# a date comparison class that can compare two dates and determine if they "close enough" to be considered the same
+# time.  mostly, if a hotel says we have a room until 11:45pm, and then pick it up at 1:00AM the next day, that's
+# "close enough" and we should consider it the same date
 class FuzzyDate:
     def __init__(self, _date):
         self.date = _date
@@ -55,16 +57,3 @@ class RoomReservation:
             return True
      
         return False
-
-    # use some fuzzy logic to figure out if a start_date and end_date are the "same"
-    # i.e. only off by two hours or less, or similar.
-    """@staticmethod
-    def _is_there_no_gap_between(date1, date2):
-        seconds_tolerance = hour_tolerance * 60 * 60
-        diff = date1 - date2
-        return diff.total_seconds() < seconds_tolerance
-
-    def _fuzzy_equals(date1, date2, seconds_tolerance = hour_tolerance * 60 * 60):
-        diff = date1 - date2
-        return diff.total_seconds() < seconds_tolerance
-            """

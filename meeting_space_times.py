@@ -3,6 +3,7 @@ import csv
 import datetime
 import re
 from datetime import timedelta
+import name_translations
 
 required_fieldnames = ['Function Space', 'Date', 'Start Time', 'End Time']
 
@@ -55,56 +56,17 @@ class MeetingSpaceTimes:
         combined_date_time_str = date_long_year + " " + time_no_seconds
         return datetime.datetime.strptime(combined_date_time_str, time_format)
 
+    @staticmethod
+    def get_list_of_rooms(function_space):
+        if function_space in name_translations.translation:
+            return name_translations.translation[function_space]
+        else:
+            return [function_space]
+
     def append_new_room_times(self, function_space, start_date, end_date):
-
-        # do hacky bullshit with stupid data
-        if function_space == 'Prince George\'s Exhibit Hall ABCD':
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall A', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall B', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall C', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall D', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Prefunction AB':
-            self.do_append_new_room_times('Prince George\'s Prefunction A', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Prefunction B', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Prefunction CD':
-            self.do_append_new_room_times('Prince George\'s Prefunction C', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Prefunction D', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Exhibit Hall AB':
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall A', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall B', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Exhibit Hall BC':
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall B', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall C', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Exhibit Hall CD':
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall C', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall D', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s Exhibit Hall DE':
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall D', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s Exhibit Hall E', start_date, end_date)
-            return
-
-        if function_space == 'Prince George\'s A-E Registration Desk':
-            self.do_append_new_room_times('Prince George\'s A Registration Desk', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s B Registration Desk', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s C Registration Desk', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s D Registration Desk', start_date, end_date)
-            self.do_append_new_room_times('Prince George\'s E Registration Desk', start_date, end_date)
-            return
-
-        # no hacky stuff needed, do this one.
-        self.do_append_new_room_times(function_space, start_date, end_date)
+        room_list = MeetingSpaceTimes.get_list_of_rooms(function_space)
+        for room in room_list:
+            self.do_append_new_room_times(room, start_date, end_date)
 
     def update_start_end_times(self, reservation):
         if self.earliest_seen_time is None or reservation.start_dt < self.earliest_seen_time:
@@ -197,7 +159,7 @@ class MeetingSpaceTimes:
         for _date in dates:
             days.append(_date.strftime("%m/%d/%y"))
 
-        writer.writerow([''] + days)
+        writer.writerow(['Function name'] + days)
 
     # return a list of all the days between our earliest time seen and latest seen
     def get_full_date_range(self):

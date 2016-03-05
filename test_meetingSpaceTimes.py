@@ -35,8 +35,8 @@ class TestMeetingSpaceTimes(TestCase):
     def test_B_no_overlap_A(self):
         function_space = "bigass ballroom"
         t = MeetingSpaceTimes()
-        start_dateA = t.combine_date_time("3:00 PM", "2/1/2016")
-        end_dateA = t.combine_date_time("5:00 PM", "2/1/2016")
+        start_dateA = t.combine_date_time("3:30 PM", "2/1/2016")
+        end_dateA = t.combine_date_time("5:30 PM", "2/1/2016")
         t.append_new_room_times(function_space, start_dateA, end_dateA)
 
         start_dateB = t.combine_date_time("1:00 PM", "2/1/2016")
@@ -52,8 +52,8 @@ class TestMeetingSpaceTimes(TestCase):
         end_dateA = t.combine_date_time("5:00 PM", "2/1/2016")
         t.append_new_room_times(function_space, start_dateA, end_dateA)
 
-        start_dateB = t.combine_date_time("6:00 PM", "2/1/2016")
-        end_dateB = t.combine_date_time("7:00 PM", "2/1/2016")
+        start_dateB = t.combine_date_time("6:30 PM", "2/1/2016")
+        end_dateB = t.combine_date_time("7:30 PM", "2/1/2016")
         t.append_new_room_times(function_space, start_dateB, end_dateB)
         self.assertReservationWasNotExtended(t)
 
@@ -90,7 +90,7 @@ class TestMeetingSpaceTimes(TestCase):
     def test_fuzzy_date_le(self):
         date1 = FuzzyDate(MeetingSpaceTimes.combine_date_time("3:00 PM", "2/1/2016"))
         date2 = FuzzyDate(MeetingSpaceTimes.combine_date_time("3:10 PM", "2/1/2016"))
-        date3 = FuzzyDate(MeetingSpaceTimes.combine_date_time("4:00 PM", "2/1/2016"))
+        date3 = FuzzyDate(MeetingSpaceTimes.combine_date_time("4:30 PM", "2/1/2016"))
 
         self.assertTrue(date1 <= date2)
         self.assertTrue(date1 == date2)
