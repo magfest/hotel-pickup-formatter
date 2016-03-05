@@ -1,120 +1,118 @@
-Date,Start Time,End Time,Function,Function Space,Setup,Agr,Room Rental
-09/09/15,06:00:00 AM,11:59:00 PM,Registration,Pan Am Foyer,Registration,,0
-09/09/15,06:00:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/09/15,08:00:00 AM,11:59:00 PM,,Cherry Boardroom,,,
-09/09/15,08:00:00 AM,11:59:00 PM,,Golden Ash Boardroom,,,
-09/10/15,12:00:00 AM,11:59:00 PM,,Golden Ash Boardroom,,,
-09/10/15,12:00:00 AM,11:59:00 PM,,Cherry Boardroom,,,
-09/10/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/10/15,06:00:00 AM,11:59:00 PM,Registration,Pan Am Foyer,,,0
-09/10/15,08:00:00 AM,11:59:00 PM,Storage,Lakeside II,,,0
-09/10/15,08:00:00 AM,11:59:00 PM,Storage,Lakeside III,,,0
-09/10/15,08:00:00 AM,11:59:00 PM,Storage,Lakeside IV,,,0
-09/10/15,08:00:00 AM,11:59:00 PM,Storage,Retreat I,,,0
-09/10/15,08:00:00 AM,11:59:00 PM,Storage,Retreat II,,,0
-09/10/15,10:15:00 AM,08:30:00 PM,,Lakeside I,,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,VIP Lounge,,10,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Walnut Room,,,0
-09/10/15,07:00:00 PM,11:59:00 PM,General Session,Plaza Ballroom,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,Not a meal,Terrace,See Diagram,200,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Upper Lobby Foyer,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Chestnut Room,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Hickory Room,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Poplar Room,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Magnolia Room,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,,Maple Room,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,Breakout,Arbors,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,Office,Laurel,See Diagram,10,0
-09/10/15,07:00:00 PM,11:59:00 PM,Office,Willow,See Diagram,,0
-09/10/15,07:00:00 PM,11:59:00 PM,Office,Elm,,,0
-09/10/15,07:00:00 PM,11:59:00 PM,Breakout,Aspen,See Diagram,,0
-09/11/15,12:00:00 AM,11:59:00 PM,,Cherry Boardroom,,,
-09/11/15,12:00:00 AM,11:59:00 PM,,Golden Ash Boardroom,,,
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside II,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside IV,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside III,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Meeting,Hickory Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Meeting,Chestnut Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Meeting,Poplar Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Magnolia Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Upper Lobby Foyer,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Not a meal,Terrace,See Diagram,200,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Lower Foyer,See Diagram,50,0
-09/11/15,12:01:00 AM,11:59:00 PM,General Session,Plaza Ballroom,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Walnut Room,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,VIP Lounge,See Diagram,10,0
-09/11/15,12:01:00 AM,11:59:00 PM,Registration,Pan Am Foyer,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Juniper,See Diagram,50,0
-09/11/15,12:01:00 AM,11:59:00 PM,Breakout,Aspen,See Diagram,50,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Elm,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Breakout,Birch,See Diagram,30,0
-09/11/15,12:01:00 AM,11:59:00 PM,Office,Willow,See Diagram,0,0
-09/11/15,12:01:00 AM,11:59:00 PM,Office,Laurel,See Diagram,10,0
-09/11/15,12:01:00 AM,11:59:00 PM,Breakout,Arbors,See Diagram,50,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Dogwood Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,,Maple Room,See Diagram,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Retreat II,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Retreat I,,,0
-09/11/15,12:01:00 AM,11:59:00 PM,Storage,Retreat I,,,0
-09/11/15,10:00:00 AM,04:30:00 PM,,Lakeside I,,,0
-09/12/15,12:00:00 AM,11:59:00 PM,,Cherry Boardroom,,,
-09/12/15,12:00:00 AM,11:59:00 PM,Storage,Lakeside IV,,,0
-09/12/15,12:00:00 AM,11:59:00 PM,,Golden Ash Boardroom,,,
-09/12/15,12:00:00 AM,11:59:00 PM,Storage,Retreat I,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Storage,Retreat II,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Maple Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Dogwood Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Magnolia Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Breakout,Arbors,See Diagram,50,0
-09/12/15,12:01:00 AM,11:59:00 PM,Office,Laurel,See Diagram,10,0
-09/12/15,12:01:00 AM,11:59:00 PM,Office,Willow,See Diagram,0,0
-09/12/15,12:01:00 AM,11:59:00 PM,Breakout,Aspen,See Diagram,50,0
-09/12/15,12:01:00 AM,11:59:00 PM,Breakout,Birch,See Diagram,30,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Elm,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Juniper,See Diagram,50,0
-09/12/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside II,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside III,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,TBA,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Meeting,Hickory Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Meeting,Poplar Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Meeting,Chestnut Room,See Diagram,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Registration,Pan Am Foyer,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/12/15,12:01:00 AM,11:59:00 PM,,VIP Lounge,See Diagram,10,0
-09/12/15,12:01:00 AM,11:59:00 PM,General Session,Plaza Ballroom,See Diagram,400,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Lower Foyer,See Diagram,50,0
-09/12/15,12:01:00 AM,11:59:00 PM,Not a meal,Terrace,See Diagram,200,0
-09/12/15,12:01:00 AM,11:59:00 PM,,Upper Lobby Foyer,,,0
-09/12/15,10:00:00 AM,07:30:00 PM,,Lakeside I,,,0
-09/13/15,12:00:00 AM,11:59:00 PM,,Cherry Boardroom,,,
-09/13/15,12:00:00 AM,11:59:00 PM,,Golden Ash Boardroom,,,
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside II,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside III,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Lakeside IV,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Meeting,Hickory Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Meeting,Chestnut Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Meeting,Poplar Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Registration,Pan Am Foyer,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,,VIP Lounge,,10,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Walnut Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Upper Lobby Foyer,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Not a meal,Terrace,See Diagram,200,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Lower Foyer,See Diagram,50,0
-09/13/15,12:01:00 AM,11:59:00 PM,General Session,Plaza Ballroom,See Diagram,100,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Juniper,See Diagram,50,0
-09/13/15,12:01:00 AM,11:59:00 PM,Breakout,Aspen,See Diagram,50,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Elm,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Office,Willow,See Diagram,0,0
-09/13/15,12:01:00 AM,11:59:00 PM,Breakout,Birch,See Diagram,30,0
-09/13/15,12:01:00 AM,11:59:00 PM,Office,Laurel,See Diagram,10,0
-09/13/15,12:01:00 AM,11:59:00 PM,Breakout,Arbors,See Diagram,50,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Maple Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Magnolia Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,,Dogwood Room,See Diagram,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Retreat II,,,0
-09/13/15,12:01:00 AM,11:59:00 PM,Storage,Retreat I,,,0
-09/14/15,12:01:00 AM,11:59:00 PM,Storage,Retreat II,,,0
-09/14/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
-09/15/15,12:01:00 AM,11:59:00 PM,Storage,Beech Room,,,0
+Date,Start Time,End Time,Function Space
+9/7/2016,6:00 AM,12:00 AM,Pan Am Foyer
+9/7/2016,6:00 AM,11:59 PM,Beech Room
+9/8/2016,12:01 AM,11:59 PM,Beech Room
+9/8/2016,12:01 AM,11:59 PM,Walnut Room
+9/8/2016,12:01 AM,11:59 PM,Plaza Ballroom
+9/8/2016,12:01 AM,11:59 PM,Lower Foyer
+9/8/2016,12:01 AM,11:59 PM,Terrace
+9/8/2016,12:01 AM,11:59 PM,Upper Lobby Foyer
+9/8/2016,12:01 AM,11:59 PM,Magnolia Room
+9/8/2016,12:01 AM,11:59 PM,Cherry Boardroom
+9/8/2016,12:01 AM,11:59 PM,Hickory Room
+9/8/2016,12:01 AM,11:59 PM,Chestnut Room
+9/8/2016,12:01 AM,11:59 PM,Poplar Room
+9/8/2016,12:01 AM,11:59 PM,Golden Ash Boardroom
+9/8/2016,12:01 AM,11:59 PM,VIP Lounge
+9/8/2016,12:01 AM,11:59 PM,Dogwood Room
+9/8/2016,12:01 AM,11:59 PM,Maple Room
+9/8/2016,12:01 AM,11:59 PM,Arbors
+9/8/2016,12:01 AM,11:59 PM,Laurel
+9/8/2016,12:01 AM,11:59 PM,Willow
+9/8/2016,12:01 AM,11:59 PM,Elm
+9/8/2016,12:01 AM,11:59 PM,Birch
+9/8/2016,12:01 AM,11:59 PM,Juniper
+9/8/2016,12:01 AM,11:59 PM,Aspen
+9/8/2016,6:00 AM,11:59 PM,Pan Am Foyer
+9/8/2016,8:00 AM,11:59 PM,Lakeside IV
+9/8/2016,8:00 AM,11:59 PM,Lakeside II
+9/8/2016,8:00 AM,11:59 PM,Lakeside III
+9/8/2016,8:00 AM,11:59 PM,Retreat I
+9/8/2016,8:00 AM,11:59 PM,Retreat II
+9/9/2016,12:01 AM,11:59 PM,Retreat II
+9/9/2016,12:01 AM,11:59 PM,Retreat I
+9/9/2016,12:01 AM,11:59 PM,Retreat I
+9/9/2016,12:01 AM,11:59 PM,Aspen
+9/9/2016,12:01 AM,11:59 PM,Juniper
+9/9/2016,12:01 AM,11:59 PM,Elm
+9/9/2016,12:01 AM,11:59 PM,Birch
+9/9/2016,12:01 AM,11:59 PM,Willow
+9/9/2016,12:01 AM,11:59 PM,Laurel
+9/9/2016,12:01 AM,11:59 PM,Maple Room
+9/9/2016,12:01 AM,11:59 PM,Arbors
+9/9/2016,12:01 AM,11:59 PM,Lakeside III
+9/9/2016,12:01 AM,11:59 PM,Lakeside II
+9/9/2016,12:01 AM,11:59 PM,Lakeside IV
+9/9/2016,12:01 AM,11:59 PM,Hickory Room
+9/9/2016,12:01 AM,11:59 PM,Chestnut Room
+9/9/2016,12:01 AM,11:59 PM,Golden Ash Boardroom
+9/9/2016,12:01 AM,11:59 PM,Poplar Room
+9/9/2016,12:01 AM,11:59 PM,Cherry Boardroom
+9/9/2016,12:01 AM,11:59 PM,Pan Am Foyer
+9/9/2016,12:01 AM,11:59 PM,Walnut Room
+9/9/2016,12:01 AM,11:59 PM,Beech Room
+9/9/2016,12:01 AM,11:59 PM,Plaza Ballroom
+9/9/2016,12:01 AM,11:59 PM,VIP Lounge
+9/9/2016,12:01 AM,11:59 PM,Dogwood Room
+9/9/2016,12:01 AM,11:59 PM,Magnolia Room
+9/9/2016,12:01 AM,11:59 PM,Upper Lobby Foyer
+9/9/2016,12:01 AM,11:59 PM,Terrace
+9/9/2016,12:01 AM,11:59 PM,Lower Foyer
+9/10/2016,12:00 AM,11:59 PM,Lakeside IV
+9/10/2016,12:00 AM,11:59 PM,Retreat I
+9/10/2016,12:01 AM,11:59 PM,Aspen
+9/10/2016,12:01 AM,11:59 PM,Birch
+9/10/2016,12:01 AM,11:59 PM,Juniper
+9/10/2016,12:01 AM,11:59 PM,Magnolia Room
+9/10/2016,12:01 AM,11:59 PM,Arbors
+9/10/2016,12:01 AM,11:59 PM,Maple Room
+9/10/2016,12:01 AM,11:59 PM,Willow
+9/10/2016,12:01 AM,11:59 PM,Laurel
+9/10/2016,12:01 AM,11:59 PM,Elm
+9/10/2016,12:01 AM,11:59 PM,Retreat II
+9/10/2016,12:01 AM,11:59 PM,VIP Lounge
+9/10/2016,12:01 AM,11:59 PM,Lakeside II
+9/10/2016,12:01 AM,11:59 PM,Lakeside III
+9/10/2016,12:01 AM,11:59 PM,Cherry Boardroom
+9/10/2016,12:01 AM,11:59 PM,Chestnut Room
+9/10/2016,12:01 AM,11:59 PM,Hickory Room
+9/10/2016,12:01 AM,11:59 PM,Poplar Room
+9/10/2016,12:01 AM,11:59 PM,Golden Ash Boardroom
+9/10/2016,12:01 AM,11:59 PM,Lower Foyer
+9/10/2016,12:01 AM,11:59 PM,Terrace
+9/10/2016,12:01 AM,11:59 PM,Upper Lobby Foyer
+9/10/2016,12:01 AM,11:59 PM,Dogwood Room
+9/10/2016,12:01 AM,11:59 PM,Plaza Ballroom
+9/10/2016,12:01 AM,11:59 PM,Beech Room
+9/10/2016,12:01 AM,11:59 PM,Pan Am Foyer
+9/11/2016,12:01 AM,11:59 PM,Pan Am Foyer
+9/11/2016,12:01 AM,11:59 PM,Plaza Ballroom
+9/11/2016,12:01 AM,11:59 PM,Beech Room
+9/11/2016,12:01 AM,11:59 PM,Walnut Room
+9/11/2016,12:01 AM,11:59 PM,Dogwood Room
+9/11/2016,12:01 AM,11:59 PM,Magnolia Room
+9/11/2016,12:01 AM,11:59 PM,Upper Lobby Foyer
+9/11/2016,12:01 AM,11:59 PM,Terrace
+9/11/2016,12:01 AM,11:59 PM,Lower Foyer
+9/11/2016,12:01 AM,11:59 PM,Golden Ash Boardroom
+9/11/2016,12:01 AM,11:59 PM,Poplar Room
+9/11/2016,12:01 AM,11:59 PM,Hickory Room
+9/11/2016,12:01 AM,11:59 PM,Chestnut Room
+9/11/2016,12:01 AM,11:59 PM,Cherry Boardroom
+9/11/2016,12:01 AM,11:59 PM,Lakeside III
+9/11/2016,12:01 AM,11:59 PM,Lakeside II
+9/11/2016,12:01 AM,11:59 PM,VIP Lounge
+9/11/2016,12:01 AM,11:59 PM,Lakeside IV
+9/11/2016,12:01 AM,11:59 PM,Retreat II
+9/11/2016,12:01 AM,11:59 PM,Elm
+9/11/2016,12:01 AM,11:59 PM,Laurel
+9/11/2016,12:01 AM,11:59 PM,Willow
+9/11/2016,12:01 AM,11:59 PM,Maple Room
+9/11/2016,12:01 AM,11:59 PM,Arbors
+9/11/2016,12:01 AM,11:59 PM,Juniper
+9/11/2016,12:01 AM,11:59 PM,Birch
+9/11/2016,12:01 AM,11:59 PM,Aspen
+9/11/2016,12:01 AM,11:59 PM,Retreat I
+9/12/2016,12:01 AM,11:59 PM,Retreat II
+9/12/2016,12:01 AM,11:59 PM,Beech Room
+9/13/2016,12:01 AM,11:59 PM,Beech Room

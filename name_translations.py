@@ -22,14 +22,20 @@ for e in ["Prince George's Prefunction", "Prince George's Exhibit Hall"]:
     breakup(e, "ABC", "BCD", "CDE")
     breakup(e, "AB", "BC", "CD", "DE")
 
+translation["Prince George's Exhibit Hall"] = ["Prince George's Exhibit Hall {}".format(c) for c in "ABCDE"]
+
 translation["Prince George's A-E Registration Desk"] = ["Prince George's {} Registration Desk".format(c) for c in "ABCDE"]
+
+translation["Eastern Shore 1-2"] = ["Eastern Shore {}".format(c) for c in "12"]
+translation["Eastern Shore"] = ["Eastern Shore {}".format(c) for c in "123"]
 
 translation["Maryland 1-6"] = ["Maryland {}".format(c) for c in "123456"]
 translation["Maryland 4-6"] = ["Maryland {}".format(c) for c in "456"]
 translation["Maryland BD/4-6"] = ["Maryland B", "Maryland D"] + translation["Maryland 4-6"]
 translation["Maryland A/1-3"] = ["Maryland A"] + ["Maryland {}".format(c) for c in "123"]
 
-translation["Baltimore 1-2"] = ["Baltimore 1", "Baltimore 2"]
+translation["Baltimore 1-2"] = ["Baltimore {}".format(c) for c in "12"]
+translation["Baltimore 3-5"] = ["Baltimore {}".format(c) for c in "345"]
 
 translation["Camellia 3-4"] = ["Camellia {}".format(c) for c in "34"]
 

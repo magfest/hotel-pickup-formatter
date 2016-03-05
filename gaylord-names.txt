@@ -15,11 +15,11 @@ Prince George's Prefunction D
 Prince George's Prefunction E
 Exhibit Hall Coat Check
 Potomac 1-6 Foyer
-Potomac A/C Lobby
 Potomac AB/CD Corridor
 Potomac Ballroom
 Potomac Coat Check
-Potomac Registration Desk A-C
+Potomac Registration Desk A
+Potomac Registration Desk C
 Dressing Room A
 Dressing Room B
 Dressing Room C
@@ -55,17 +55,23 @@ Azalea 2
 Azalea 3
 Camellia 1
 Camellia 2
-Camellia 3-4
+Camellia 3
+Camellia 4
 Magnolia 1
 Magnolia 2
 Magnolia 3
 Annapolis
-Baltimore 1-2
-Baltimore 3-5
+Baltimore 1
+Baltimore 2
+Baltimore 3
+Baltimore 4
+Baltimore 5
 Presidential Boardroom
 Ft. Washington Boardroom
 Ft. Washington Reg Desk
-Eastern Shore
+Eastern Shore 1
+Eastern Shore 2
+Eastern Shore 3
 Mezzanine Room 1
 Mezzanine Room 2
 Mezzanine Room 3
