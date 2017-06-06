@@ -22,6 +22,10 @@ for e in ["Prince George's Prefunction", "Prince George's Exhibit Hall"]:
     breakup(e, "ABC", "BCD", "CDE")
     breakup(e, "AB", "BC", "CD", "DE")
 
+
+def typo(issue, fix):
+    translation[issue] = [fix]
+
 translation["Prince George's Exhibit Hall"] = ["Prince George's Exhibit Hall {}".format(c) for c in "ABCDE"]
 
 translation["Prince George's A-E Registration Desk"] = ["Prince George's {} Registration Desk".format(c) for c in "ABCDE"]
@@ -39,6 +43,13 @@ translation["Baltimore 3-5"] = ["Baltimore {}".format(c) for c in "345"]
 
 translation["Camellia 3-4"] = ["Camellia {}".format(c) for c in "34"]
 
-translation["Potomac A/C Lobby"] = ["Potomac {} Lobby".format(c) for c in "AC"]
+translation["Potomac A-C Lobby"] = translation["Potomac A/C Lobby"] = ["Potomac {} Lobby".format(c) for c in "AC"]
 
 translation["Potomac Registration Desk A-C"] = ["Potomac Registration Desk {}".format(c) for c in "AC"]
+
+translation["Ft. Washington RegDesk"] = ["Ft. Washington Reg Desk"]
+
+translation["Chesa pea ke J-L"] = ["Chesapeake {}".format(c) for c in "JKL"]
+translation["Chesapeake J-L"] = ["Chesapeake {}".format(c) for c in "JKL"]
+
+typo("Magnolia2", "Magnolia 2")
