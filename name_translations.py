@@ -53,3 +53,13 @@ translation["Chesa pea ke J-L"] = ["Chesapeake {}".format(c) for c in "JKL"]
 translation["Chesapeake J-L"] = ["Chesapeake {}".format(c) for c in "JKL"]
 
 typo("Magnolia2", "Magnolia 2")
+
+typo("PAN AM Foyer", "Pan Am Foyer")
+
+translation["Beech"] = translation["Beech Room"] = ["Beech {}".format(c) for c in "AB"]
+
+translation["Plaza Ballroom"] = ["Plaza Ballroom {}".format(c) for c in "ABC"]
+
+translation["Plaza Ballroom AB"] = ["Plaza Ballroom {}".format(c) for c in "AB"]
+
+typo("Magnolia Room", "Magnolia")

@@ -18,6 +18,11 @@ _allowed_days = ['sat', 'sun', 'mon', 'tues', 'tue', 'wed', 'thu', 'thurs', 'fri
 _allowed_time_postfixes = ['AM', 'PM']
 
 
+# gaylord data has this, mark center doesn't
+has_start_day = False
+has_room_status = False
+
+
 def preprocess_raw_meeting_times_text(input_filename, outfile_name):
     # cheap hack
     assert '.csv' in outfile_name
@@ -34,7 +39,10 @@ def preprocess_raw_meeting_times_text(input_filename, outfile_name):
     with open(outfile_name, 'w') as csvfile:
         out_csv = csv.writer(csvfile)
 
-        out_csv.writerow(['Date','Day','Start Time','End Time','Status','Function Space'])
+        if has_start_day:
+            out_csv.writerow(['Date','Day','Start Time','End Time','Status','Function Space'])
+        else:
+            out_csv.writerow(['Date', 'Start Time', 'End Time', 'Status', 'Function Space'])
 
         for row in out_data:
             out_csv.writerow(row)
@@ -52,10 +60,11 @@ def process_line(line):
     remainder = remainder.split(' ', 1)[1]
 
     # ----
-    start_day = remainder.split(' ', 1)[0]
-    assert start_day.lower() in _allowed_days
+    if has_start_day:
+        start_day = remainder.split(' ', 1)[0]
+        assert start_day.lower() in _allowed_days
 
-    remainder = remainder.split(' ', 1)[1]
+        remainder = remainder.split(' ', 1)[1]
 
     # ----
     tmp = process_time_with_postfix(remainder)
@@ -66,14 +75,21 @@ def process_line(line):
     end_time, remainder = tmp[0], tmp[1]
 
     # ----
-    tmp = match_room_status(remainder)
-    assert tmp and "Couldn't match valid room status"
-    room_status, remainder = tmp[0], tmp[1]
+    if not has_room_status:
+        room_status = None
+    else:
+        tmp = match_room_status(remainder)
+        assert tmp and "Couldn't match valid room status"
+        room_status, remainder = tmp[0], tmp[1]
 
     # ----
-    room_name = remainder
+    room_name = remainder.strip().replace('\n', '')
 
-    return [date, start_day, start_time, end_time, room_status, room_name]
+    # there's a more elegant way to do this but HAXXX
+    if has_start_day:
+        return [date, start_day, start_time, end_time, room_status, room_name]
+    else:
+        return [date,            start_time, end_time, room_status, room_name]
 
 
 def match_room_status(remainder):
